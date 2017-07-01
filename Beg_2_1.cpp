@@ -8,10 +8,13 @@ int main()
 	std::cin >> no >> pow;
 	int t = no;
 	pow--;
-	while (pow--)
+	if (no >= 0 && pow >= 0)
 	{
-		no = no * t;
+		while (pow--)
+		{
+			no = no * t;
+		}
+		std::cout << no;
 	}
-	std::cout << no;
 	return 0;
 }
