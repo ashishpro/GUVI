@@ -16,5 +16,7 @@ int main()
 		}
 		std::cout << no;
 	}
+	else
+		std::cout << "Invalid";
 	return 0;
 }
