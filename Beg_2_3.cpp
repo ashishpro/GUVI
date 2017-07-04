@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <algorithm>
 
@@ -7,11 +8,19 @@ int main() {
 	int a = 10;
 	cin >> a;
 	bool f = false;
-	for (int i = 2;i < a-1;i++)
+	if (a == 0 || a==1)
 	{
-		if (a % i == 0)
+		cout << "No Prime";
+		return 0;
+	}
+	else
+	{
+		for (int i = 2;i < a - 1;i++)
 		{
-			f = true;
+			if (a % i == 0)
+			{
+				f = true;
+			}
 		}
 	}
 	if (!f)
